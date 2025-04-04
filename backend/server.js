@@ -16,8 +16,9 @@ process.emitWarning = function(warning, ...args) {
 
 
 
-conconst path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '.env') });st express = require('express');
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
+express = require('express');
 const connectDB = require('./config/db');
 const cors = require('cors');
 const authRoutes = require('./routes/auth');
